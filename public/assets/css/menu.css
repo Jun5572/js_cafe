@@ -1,0 +1,32 @@
+.page-title {
+  font-family: MyWebFont;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+.menu-contents {
+  margin-bottom: 200px;
+}
+
+.menu-contents .menu-inner-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  width: 84%;
+  margin: auto;
+}
+
+.menu-contents .menu-inner-wrapper .menu-item {
+  width: 380px;
+}
+
+.menu-contents .menu-inner-wrapper .menu-item .menu-img {
+  width: 100%;
+  height: 305px;
+  background-color: pink;
+}
+/*# sourceMappingURL=menu.css.map */
