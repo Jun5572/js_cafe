@@ -26,15 +26,28 @@ a {
 }
 
 .hero {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-image: url("/public/images/shard-g794920a6f_1920.jpg");
-    background-size: cover;
-    background-position: center;
-    & .hero-container {
-        position: relative;
+    margin: auto;
+    & .hero-img {
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        left: 0; 
+        right: 0;
+        bottom: 0;
+        margin: auto;
         width: 90%;
+        height: 80%;
+        background-image: url("/public/images/shard-g794920a6f_1920.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    & .hero-container {
+        width: 90%;
+        height: 90%;
         margin: auto;
         & header {
             position: fixed;
@@ -55,14 +68,13 @@ a {
             & nav {
                 & ul {
                     display:flex;
-                    // justify-content: flex-end;
                     & li {
                         margin: 0 1em;
                     }
                 }
             }
         }
-        & .inner-contents {
+        & .hero-title {
             width: 100%;
             min-height: 100vh;
             display:flex;
@@ -82,4 +94,8 @@ a {
             }
         }
     }
+}
+
+.main-contents {
+    margin-bottom: 200px;
 }
