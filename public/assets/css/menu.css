@@ -2,15 +2,22 @@
   font-family: MyWebFont;
   font-size: 2rem;
   text-align: center;
-  margin-top: 90px;
-  margin-bottom: 100px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 
 .menu-contents {
   margin-bottom: 200px;
 }
 
-.menu-contents .menu-inner-wrapper {
+.menu-contents .menu-inner-wrapper .slider-wrapper {
+  width: 100%;
+  height: 305px;
+  background-color: orange;
+  margin-top: 100px;
+}
+
+.menu-contents .menu-inner-wrapper .menu-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -20,11 +27,11 @@
   margin: auto;
 }
 
-.menu-contents .menu-inner-wrapper .menu-item {
+.menu-contents .menu-inner-wrapper .menu-list .menu-item {
   width: 380px;
 }
 
-.menu-contents .menu-inner-wrapper .menu-item .menu-img {
+.menu-contents .menu-inner-wrapper .menu-list .menu-item .menu-img {
   width: 100%;
   height: 305px;
   background-color: pink;
