@@ -17,7 +17,8 @@
         & .menu-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 50px 40px;
+            justify-items: center;
+            gap: 2vw 3vw;
             width: 84%;
             margin: auto;
             & .menu-item {
