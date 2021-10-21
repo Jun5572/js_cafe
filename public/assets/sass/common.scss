@@ -10,6 +10,12 @@ $bgColorFooter: #5F4E46;
 footer {
     height: 200px;
     background-color: $bgColorFooter;
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+
+    }
 }
 
 body {
