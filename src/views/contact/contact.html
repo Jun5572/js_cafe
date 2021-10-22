@@ -7,33 +7,110 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="../../../public/assets/reset.css">
     <link rel="stylesheet" href="../../../public/assets/css/common.css">
+    <link rel="stylesheet" href="../../../public/assets/css/contact.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <title>J's Cafe</title>
 </head>
 <body>
-    <h1>This is Contact</h1>
+    <header class="header w-container">
+        <a href="../top/top.html" class="logo">logo</a>
+        <nav>
+            <ul>
+                <li><a href="../news/news.html">News</a></li>
+                <li><a href="../menu/menu.html">Menu</a></li>
+                <li><a href="../company/company.html">Company</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero">
+        <div class="hero-img"></div>
         <div class="hero-container w-container">
-            <header>
-                <a href="../top/top.html" class="logo">logo</a>
-                <nav>
-                    <ul>
-                        <li><a href="../news/news.html">News</a></li>
-                        <li><a href="../menu/menu.html">Menu</a></li>
-                        <li><a href="../company/company.html">Company</a></li>
-                    </ul>
-                </nav>
-            </header>
             <div class="hero-title">
                 <h1>Contact</h1>
             </div>
         </div>
     </section>
-    <section class="access-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8147.354780674909!2d139.81978825377172!3d35.78083734076345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189028e443d88b%3A0x680dc9e2b416997a!2z5YWt55S66aeF!5e0!3m2!1sja!2sjp!4v1634309195729!5m2!1sja!2sjp" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <section class="contact-form-wrapper w-container">
+        <h2>Contact Form</h2>
+        <form method="post" action>
+            <table class="contact-form-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            お名前
+                            <span class="required_icon">必須</span>
+                        </th>
+                        <td>
+                            <input type="text" name="your-name" id="" placeholder="珈琲太郎">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            E-Mail
+                            <span class="required_icon">必須</span>
+                        </th>
+                        <td>
+                            <input type="email" name="your-email" id="" placeholder="xxxxxx@xxx">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            お電話番号
+                            <span class="required_icon">必須</span>
+                        </th>
+                        <td>
+                            <input type="tel" name="your-phone-number" id="" placeholder="090-0000-0000">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ご住所
+                            <span class="optional_icon">任意</span>
+                        </th>
+                        <td class="td-zip">
+                            <span class="zipcode-container">
+                                <span>〒</span>
+                                <input type="tel" name="your-sip" id="">
+                            </span>
+                            <input type="text" name="your-phone-number" id="" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            お問い合わせカテゴリ
+                            <span class="required_icon">必須</span>
+                        </th>
+                        <td>
+                                <select name="contact-cate" id="contact-cate">
+                                    <option value="0" selected>選択してください</option>
+                                    <option value="1" >プルダウン１</option>
+                                    <option value="2" >プルダウン２</option>
+                                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="contact-head">
+                            お問い合わせ内容
+                            <span class="optional_icon">任意</span>
+                        </th>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" value="confirm">内容を確認</button>
+        </form>
     </section>
-    <section class="sns-container">
-        
-    </section>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="../contact/contact.html">お問い合わせ</a>
+            <a href="../privacy_policy/privacy_policy.html">プライバシーポリシー</a>
+            <a href="../recruit/recruit.html">スタッフ募集</a>
+        </div>
+        <p>Copyright©︎J's Cafe All Right Reserved. </p>
+    </footer>
 </body>
 </html>

@@ -47,6 +47,33 @@ a {
     color: inherit;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    height: 50px;
+    & .logo {
+        width: 200px;
+        height: 100%;
+        background-color: pink;
+    }
+    & nav {
+        & ul {
+            display:flex;
+            & li {
+                margin: 0 1em;
+            }
+        }
+    }
+}
+
 .w-container {
     width: 90%;
     margin: auto;
@@ -76,31 +103,7 @@ a {
         width: 90%;
         height: 90%;
         margin: auto;
-        & header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: inherit;
-            height: 50px;
-            & .logo {
-                width: 200px;
-                height: 100%;
-                background-color: pink;
-            }
-            & nav {
-                & ul {
-                    display:flex;
-                    & li {
-                        margin: 0 1em;
-                    }
-                }
-            }
-        }
+        
         & .hero-title {
             width: 100%;
             min-height: 100vh;

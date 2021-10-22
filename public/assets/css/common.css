@@ -53,6 +53,42 @@ a {
   color: inherit;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: inherit;
+  height: 50px;
+}
+
+.header .logo {
+  width: 200px;
+  height: 100%;
+  background-color: pink;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav ul li {
+  margin: 0 1em;
+}
+
 .w-container {
   width: 90%;
   margin: auto;
@@ -85,41 +121,6 @@ a {
   width: 90%;
   height: 90%;
   margin: auto;
-}
-
-.hero .hero-container header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: inherit;
-  height: 50px;
-}
-
-.hero .hero-container header .logo {
-  width: 200px;
-  height: 100%;
-  background-color: pink;
-}
-
-.hero .hero-container header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hero .hero-container header nav ul li {
-  margin: 0 1em;
 }
 
 .hero .hero-container .hero-title {

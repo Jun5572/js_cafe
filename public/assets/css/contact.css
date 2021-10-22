@@ -1,0 +1,26 @@
+.contact-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-form-wrapper .contact-form-table {
+  table-layout: fixed;
+}
+
+.contact-form-wrapper .contact-form-table th {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=contact.css.map */
