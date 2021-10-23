@@ -11,7 +11,81 @@
         table-layout: fixed;
 
         & th {
+            position: relative;
+            display: table-cell;
+            width: 290px;
+            padding: 15px;
+            text-align: left;
             vertical-align: middle;
+
+            & span {
+                position: absolute;
+                top: calc(50% - (2em / 2));
+                right: 0;
+                width: 4em;
+                height: 2em;
+                text-align: center;
+                display: inline-block;
+                line-height: 2em;
+                vertical-align: middle;
+
+                &.required-icon {
+                    background-color: black;
+                    color: #ffffff;
+                }
+
+                &.optional-icon {
+                    background-color: #bfcad2;
+                    color: black;
+                }
+            }
+        }
+        
+        & td {
+            display: table-cell;
+            padding: 15px;
+            vertical-align: middle;
+
+            & input[type="text"],
+            & input[type="email"],
+            & input[type="tel"] {
+                outline: none;
+                border: none;
+                width: 500px;
+                padding: 1em;
+                background-color: #f1f1f1;
+            }
+            & input[name="your-zip"] {
+                width: 100px;
+            }
+
+            & textarea {
+                outline: none;
+                border: none;
+                background-color: #f1f1f1;
+                resize: auto;
+                max-width: 600px;
+                max-height: 500px;
+                min-width: 100px;
+                min-height: 100px;
+                width:500px;
+                padding: 1em;
+                // height:300px
+            }
+        }
+
+        .td-zip {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+
+        .contact-head,
+        .zip-head
+         {
+            vertical-align: top;
+            top: 0;
         }
     }
 }
