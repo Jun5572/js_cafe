@@ -63,10 +63,6 @@ a {
   color: inherit;
 }
 
-section {
-  padding-top: 40px;
-}
-
 section + section {
   padding-top: 0;
 }
