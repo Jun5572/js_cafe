@@ -4,6 +4,14 @@
   src: url("../fonts/Chalkduster.woff") format("woff");
 }
 
+h2 {
+  font-family: MyWebFont, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,11 +55,20 @@ footer p {
 body {
   font-size: 15px;
   font-family: sans-serif;
+  letter-spacing: 0.1px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  padding-top: 40px;
+}
+
+section + section {
+  padding-top: 0;
 }
 
 .header {
@@ -155,5 +172,33 @@ a {
 
 .main-contents {
   margin-bottom: 200px;
+}
+
+.txt-lg {
+  font-size: 1.5rem;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.btn-sm {
+  padding: 0.25em 1.5em;
+}
+
+.btn-lg {
+  padding: 1em 3.5em;
+}
+
+.submit {
+  background-color: #eccc9a;
 }
 /*# sourceMappingURL=common.css.map */

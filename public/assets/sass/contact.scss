@@ -9,6 +9,12 @@
     
     .contact-form-table {
         table-layout: fixed;
+        border-collapse: collapse;
+        color: #848484;
+
+        & tr {
+            border-bottom: 1px solid #efefef;
+        } 
 
         & th {
             position: relative;
@@ -17,6 +23,7 @@
             padding: 15px;
             text-align: left;
             vertical-align: middle;
+            font-weight: 400;
 
             & span {
                 position: absolute;
@@ -24,6 +31,7 @@
                 right: 0;
                 width: 4em;
                 height: 2em;
+                font-size: 0.8em;
                 text-align: center;
                 display: inline-block;
                 line-height: 2em;
@@ -74,18 +82,34 @@
             }
         }
 
-        .td-zip {
+        & .td-zip {
             display: flex;
             flex-direction: column;
             gap: 5px;
         }
 
 
-        .contact-head,
-        .zip-head
+        & .contact-head,
+        & .zip-head
          {
             vertical-align: top;
             top: 0;
+
+            & span {
+                top: 15px;
+            }
         }
+
+        & select {
+            outline: none;
+            border: none;
+            padding: 15px;
+            background-color: #efefef;
+        }
+    }
+
+    & button {
+        display: block;
+        margin: 40px auto;
     }
 }

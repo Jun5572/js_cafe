@@ -18,6 +18,12 @@
 
 .contact-form-wrapper .contact-form-table {
   table-layout: fixed;
+  border-collapse: collapse;
+  color: #848484;
+}
+
+.contact-form-wrapper .contact-form-table tr {
+  border-bottom: 1px solid #efefef;
 }
 
 .contact-form-wrapper .contact-form-table th {
@@ -27,6 +33,7 @@
   padding: 15px;
   text-align: left;
   vertical-align: middle;
+  font-weight: 400;
 }
 
 .contact-form-wrapper .contact-form-table th span {
@@ -35,6 +42,7 @@
   right: 0;
   width: 4em;
   height: 2em;
+  font-size: 0.8em;
   text-align: center;
   display: inline-block;
   line-height: 2em;
@@ -99,5 +107,22 @@
 .contact-form-wrapper .contact-form-table .zip-head {
   vertical-align: top;
   top: 0;
+}
+
+.contact-form-wrapper .contact-form-table .contact-head span,
+.contact-form-wrapper .contact-form-table .zip-head span {
+  top: 15px;
+}
+
+.contact-form-wrapper .contact-form-table select {
+  outline: none;
+  border: none;
+  padding: 15px;
+  background-color: #efefef;
+}
+
+.contact-form-wrapper button {
+  display: block;
+  margin: 40px auto;
 }
 /*# sourceMappingURL=contact.css.map */

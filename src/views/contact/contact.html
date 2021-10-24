@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../../public/assets/css/common.css">
     <link rel="stylesheet" href="../../../public/assets/css/contact.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://kit.fontawesome.com/d9203d9956.js" crossorigin="anonymous"></script>
+
     <title>J's Cafe</title>
 </head>
 <body>
@@ -31,9 +33,9 @@
         </div>
     </section>
 
+    <h2>Contact Form</h2>
     <section class="contact-form-wrapper w-container">
-        <h2>Contact Form</h2>
-        <form method="post" action>
+        <form method="post" action="#">
             <table class="contact-form-table">
                 <tbody>
                     <tr>
@@ -42,7 +44,7 @@
                             <span class="required-icon">必須</span>
                         </th>
                         <td>
-                            <input type="text" name="your-name" id="" placeholder="珈琲太郎">
+                            <input type="text" name="your-name" id="" placeholder="珈琲太郎" required>
                         </td>
                     </tr>
                     <tr>
@@ -51,7 +53,7 @@
                             <span class="required-icon">必須</span>
                         </th>
                         <td>
-                            <input type="email" name="your-email" id="" placeholder="xxxxxx@xxx">
+                            <input type="email" name="your-email" id="" placeholder="xxxxxx@xxx" required>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +62,7 @@
                             <span class="required-icon">必須</span>
                         </th>
                         <td>
-                            <input type="tel" name="your-phone-number" id="" placeholder="090-0000-0000">
+                            <input type="tel" name="your-phone-number" id="" placeholder="090-0000-0000" required>
                         </td>
                     </tr>
                     <tr>
@@ -82,11 +84,12 @@
                             <span class="required-icon">必須</span>
                         </th>
                         <td>
-                                <select name="contact-cate" id="contact-cate">
-                                    <option value="0" selected>選択してください</option>
-                                    <option value="1" >プルダウン１</option>
-                                    <option value="2" >プルダウン２</option>
-                                </select>
+                            <select name="contact-cate" id="contact-cate" required>
+                                <option value="0" selected>選択してください</option>
+                                <option value="1" >プルダウン１</option>
+                                <option value="2" >プルダウン２</option>
+                                <option value="2" >とりあえずプルダウン３</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -100,7 +103,7 @@
                     </tr>
                 </tbody>
             </table>
-            <button type="submit" value="confirm">内容を確認</button>
+            <button class="txt-lg btn-lg submit" type="submit" value="confirm">内容を確認</button>
         </form>
     </section>
 
