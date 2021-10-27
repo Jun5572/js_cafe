@@ -100,3 +100,12 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+/* original reset*/
+li {
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
