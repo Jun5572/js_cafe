@@ -83,7 +83,7 @@
   outline: none;
   border: none;
   background-color: #f1f1f1;
-  resize: auto;
+  resize: none;
   max-width: 600px;
   max-height: 500px;
   min-width: 100px;
