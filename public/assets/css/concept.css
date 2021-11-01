@@ -1,0 +1,90 @@
+section:last-of-type {
+  margin-bottom: 50vh;
+}
+
+.title {
+  font-size: 48px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.title ~ p {
+  margin-bottom: 1em;
+}
+
+.title ~ p:last-child {
+  margin: 0;
+}
+
+.head-text-container {
+  width: 80%;
+  margin: auto;
+}
+
+.head-text-container p {
+  text-align: center;
+  line-height: 3em;
+}
+
+.main-visual-img {
+  position: relative;
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  background-image: url("/public/images/gor-davtyan-0BIvjaQwvQQ-unsplash.jpg");
+  margin-bottom: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-visual-img .text-container {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  width: 55%;
+  padding: 2em;
+  margin-bottom: -100px;
+  background-color: orange;
+}
+
+.commitment-container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px auto;
+}
+
+.commitment-container .commit-img {
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+  background-color: gray;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+
+.commitment-container .commit-img:nth-child(1) {
+  margin-top: -60px;
+  -webkit-box-shadow: 15px 15px 0px orange;
+          box-shadow: 15px 15px 0px orange;
+}
+
+.commitment-container .commit-img:nth-child(2) {
+  margin-bottom: -60px;
+  -webkit-box-shadow: 15px 15px 0px palevioletred;
+          box-shadow: 15px 15px 0px palevioletred;
+}
+
+.commitment-container .text-container {
+  padding: 1em;
+  margin: auto;
+}
+/*# sourceMappingURL=concept.css.map */
