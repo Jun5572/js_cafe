@@ -7,7 +7,7 @@ $bgColorFooter: #5F4E46;
 }
 
 h2 {
-    font-family: MyWebFont, sans-serif;
+    font-family: 'Dancing Script', cursive, sans-serif;
     font-size: 2rem;
     text-align: center;
     // margin-top: 120px;
@@ -120,7 +120,7 @@ table tr th {
         margin: auto;
         width: 90%;
         height: 80%;
-        background-image: url("/public/images/shard-g794920a6f_1920.jpg");
+        background-image: url("../images/shard-g794920a6f_1920.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -137,9 +137,8 @@ table tr th {
             justify-content: center;
             align-items: center;
             & h1 {
-                font-size: 6rem;
-                font-family: MyWebFont;
-                // font-family: "Trattatello";
+                font-size: 8rem;
+                font-family: 'Dancing Script', cursive, sans-serif;
                 &::before,
                 &::after {
                     content: '-';

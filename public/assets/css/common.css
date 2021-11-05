@@ -5,7 +5,7 @@
 }
 
 h2 {
-  font-family: MyWebFont, sans-serif;
+  font-family: 'Dancing Script', cursive, sans-serif;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 50px;
@@ -134,7 +134,7 @@ table tr th {
   margin: auto;
   width: 90%;
   height: 80%;
-  background-image: url("/public/images/shard-g794920a6f_1920.jpg");
+  background-image: url("../images/shard-g794920a6f_1920.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -164,8 +164,8 @@ table tr th {
 }
 
 .hero .hero-container .hero-title h1 {
-  font-size: 6rem;
-  font-family: MyWebFont;
+  font-size: 8rem;
+  font-family: 'Dancing Script', cursive, sans-serif;
 }
 
 .hero .hero-container .hero-title h1::before, .hero .hero-container .hero-title h1::after {
