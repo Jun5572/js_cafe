@@ -60,28 +60,16 @@
             width: 100%;
             border-bottom: 1px solid #efefef;
 
+            & .news-title {
+                padding: 35px 15px;
+            }
+
             &:last-child {
                 border-bottom: 2px solid #efefef;
             }
         }
 
-        & .news-head {
-            display: flex;
-            align-items: center;
-            padding: 35px 15px;
-            & p {
-                margin-right: 1em;
-            }
-
-            & span {
-                display: inline-block;
-                background-color: gray;
-                color: #fff;
-                min-width: 90px;
-                font-size: .8em;
-                padding: 0.6em 0;
-            }
-        }
+        
 
         & td {
             width: 75%;
@@ -93,16 +81,15 @@
                 &::after {
                     position: absolute;
                     content: '>';
-                    width: 50px;
-                    height: 50px;
-                    top: 0;
+                    // width: 50px;
+                    // height: 50px;
+                    // top: 0;
                     right: 0;
                 }
             }
 
         }
     }
-
 }
 
 .pagination-container {

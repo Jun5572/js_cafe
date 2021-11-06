@@ -1,3 +1,30 @@
+.main-container {
+    margin-bottom: 200px;
+}
+
 .contents {
     width: 80%;
+}
+
+.news-body {
+    & > div {
+        margin-bottom: 80px;
+    }
+    & .img-text-container {
+        display: flex;
+        gap: 2em;
+
+        & .img-container {
+            width: 40%;
+            height: 400px;
+            background-color: turquoise;
+            background-image: url("../images/new_menu_cake.jpg");
+            background-size: cover;
+            background-position: center 70%;
+            object-fit: cover;
+        }
+        & .text-container {
+            width: 60%;
+        }
+    }
 }
