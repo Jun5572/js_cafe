@@ -19,8 +19,7 @@
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 3vw 3vw;
-  width: 84%;
+  gap: 3vw 1vw;
   margin: auto;
 }
 

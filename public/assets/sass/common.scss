@@ -112,7 +112,7 @@ table tr th {
     margin: auto;
     & .hero-img {
         position: absolute;
-        z-index: -10;
+        z-index: 0;
         top: 0;
         left: 0; 
         right: 0;
@@ -123,6 +123,27 @@ table tr th {
         background-image: url("../images/shard-g794920a6f_1920.jpg");
         background-size: cover;
         background-position: center;
+    }
+    & .sns-area {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        border-radius: 8px 0 0 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        & a {
+            margin: 5px 0;
+            color: #6e6e6e;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
     & .hero-container {
         width: 90%;
@@ -139,6 +160,7 @@ table tr th {
             & h1 {
                 font-size: 8rem;
                 font-family: 'Dancing Script', cursive, sans-serif;
+                z-index: 10;
                 &::before,
                 &::after {
                     content: '-';
@@ -152,6 +174,15 @@ table tr th {
 
 .main-contents {
     margin-bottom: 200px;
+
+    & .head-text-container {
+        width: 80%;
+        margin: auto;
+        & p {
+            text-align: center;
+            line-height: 3em;
+        }
+    }
 }
 
 .news-head {
@@ -212,4 +243,13 @@ button {
         padding: 10px;
         margin-right: 1em;
     }
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #848484;
+    & tr {
+            border-bottom: 1px solid #efefef;
+        }
 }

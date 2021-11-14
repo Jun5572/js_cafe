@@ -126,7 +126,7 @@ table tr th {
 
 .hero .hero-img {
   position: absolute;
-  z-index: -10;
+  z-index: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -137,6 +137,40 @@ table tr th {
   background-image: url("../images/shard-g794920a6f_1920.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.hero .sns-area {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border-radius: 8px 0 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.hero .sns-area a {
+  margin: 5px 0;
+  color: #6e6e6e;
+}
+
+.hero .sns-area a:hover {
+  opacity: 0.7;
 }
 
 .hero .hero-container {
@@ -166,6 +200,7 @@ table tr th {
 .hero .hero-container .hero-title h1 {
   font-size: 8rem;
   font-family: 'Dancing Script', cursive, sans-serif;
+  z-index: 10;
 }
 
 .hero .hero-container .hero-title h1::before, .hero .hero-container .hero-title h1::after {
@@ -176,6 +211,16 @@ table tr th {
 
 .main-contents {
   margin-bottom: 200px;
+}
+
+.main-contents .head-text-container {
+  width: 80%;
+  margin: auto;
+}
+
+.main-contents .head-text-container p {
+  text-align: center;
+  line-height: 3em;
 }
 
 .news-head {
@@ -238,5 +283,15 @@ button:hover {
   border-radius: 50%;
   padding: 10px;
   margin-right: 1em;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #848484;
+}
+
+table tr {
+  border-bottom: 1px solid #efefef;
 }
 /*# sourceMappingURL=common.css.map */

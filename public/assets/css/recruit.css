@@ -1,0 +1,27 @@
+.head-text-container h2 {
+  position: relative;
+}
+
+.head-text-container h2::after {
+  position: absolute;
+  top: -0.6em;
+  left: 50%;
+  content: 'People';
+  font-size: 3em;
+  color: #efefef;
+  z-index: -10;
+}
+
+.description-container {
+  width: 80%;
+  margin: auto;
+}
+
+.description-container .desc-table {
+  width: 100%;
+}
+
+.description-container .desc-table th {
+  width: 30%;
+}
+/*# sourceMappingURL=recruit.css.map */

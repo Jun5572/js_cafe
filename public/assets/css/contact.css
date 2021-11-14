@@ -16,17 +16,17 @@
   text-align: center;
 }
 
-.contact-form-wrapper .contact-form-table {
+.contact-form-wrapper table {
   table-layout: fixed;
   border-collapse: collapse;
   color: #848484;
 }
 
-.contact-form-wrapper .contact-form-table tr {
+.contact-form-wrapper table tr {
   border-bottom: 1px solid #efefef;
 }
 
-.contact-form-wrapper .contact-form-table th {
+.contact-form-wrapper table th {
   position: relative;
   display: table-cell;
   width: 290px;
@@ -36,7 +36,7 @@
   font-weight: 400;
 }
 
-.contact-form-wrapper .contact-form-table th span {
+.contact-form-wrapper table th span {
   position: absolute;
   top: calc(50% - (2em / 2));
   right: 0;
@@ -49,25 +49,25 @@
   vertical-align: middle;
 }
 
-.contact-form-wrapper .contact-form-table th span.required-icon {
+.contact-form-wrapper table th span.required-icon {
   background-color: black;
   color: #ffffff;
 }
 
-.contact-form-wrapper .contact-form-table th span.optional-icon {
+.contact-form-wrapper table th span.optional-icon {
   background-color: #bfcad2;
   color: black;
 }
 
-.contact-form-wrapper .contact-form-table td {
+.contact-form-wrapper table td {
   display: table-cell;
   padding: 15px;
   vertical-align: middle;
 }
 
-.contact-form-wrapper .contact-form-table td input[type="text"],
-.contact-form-wrapper .contact-form-table td input[type="email"],
-.contact-form-wrapper .contact-form-table td input[type="tel"] {
+.contact-form-wrapper table td input[type="text"],
+.contact-form-wrapper table td input[type="email"],
+.contact-form-wrapper table td input[type="tel"] {
   outline: none;
   border: none;
   width: 500px;
@@ -75,11 +75,11 @@
   background-color: #f1f1f1;
 }
 
-.contact-form-wrapper .contact-form-table td input[name="your-zip"] {
+.contact-form-wrapper table td input[name="your-zip"] {
   width: 100px;
 }
 
-.contact-form-wrapper .contact-form-table td textarea {
+.contact-form-wrapper table td textarea {
   outline: none;
   border: none;
   background-color: #f1f1f1;
@@ -92,7 +92,7 @@
   padding: 1em;
 }
 
-.contact-form-wrapper .contact-form-table .td-zip {
+.contact-form-wrapper table .td-zip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,18 +103,18 @@
   gap: 5px;
 }
 
-.contact-form-wrapper .contact-form-table .contact-head,
-.contact-form-wrapper .contact-form-table .zip-head {
+.contact-form-wrapper table .contact-head,
+.contact-form-wrapper table .zip-head {
   vertical-align: top;
   top: 0;
 }
 
-.contact-form-wrapper .contact-form-table .contact-head span,
-.contact-form-wrapper .contact-form-table .zip-head span {
+.contact-form-wrapper table .contact-head span,
+.contact-form-wrapper table .zip-head span {
   top: 15px;
 }
 
-.contact-form-wrapper .contact-form-table select {
+.contact-form-wrapper table select {
   outline: none;
   border: none;
   padding: 15px;
