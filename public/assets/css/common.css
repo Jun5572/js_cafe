@@ -172,9 +172,10 @@ table tr th {
   background-image: url("../images/shard-g794920a6f_1920.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
-.hero .sns-area {
+.hero .sns-wrapper {
   position: absolute;
   top: 50%;
   right: 0;
@@ -199,12 +200,12 @@ table tr th {
   z-index: 10;
 }
 
-.hero .sns-area a {
+.hero .sns-wrapper a {
   margin: 8px 0;
   color: #6e6e6e;
 }
 
-.hero .sns-area a:hover {
+.hero .sns-wrapper a:hover {
   opacity: 0.7;
 }
 

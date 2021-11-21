@@ -143,8 +143,9 @@ table tr th {
         background-image: url("../images/shard-g794920a6f_1920.jpg");
         background-size: cover;
         background-position: center;
+        overflow: hidden;
     }
-    & .sns-area {
+    & .sns-wrapper {
         position: absolute;
         top: 50%;
         right: 0;

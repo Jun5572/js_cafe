@@ -1,9 +1,4 @@
-// slickのスライダー記述
-$(".slider-wrapper").slick({
-    centerMode: true,
-    centerPadding: '100px',
-    autoplay: true,
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-});
+window.addEventListener("DOMContentLoaded", () => {
+    let sns_wrapper = document.querySelector(".sns-wrapper");
+    sns_wrapper.classList.add("show");
+})
