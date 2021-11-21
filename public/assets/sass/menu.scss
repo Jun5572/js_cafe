@@ -1,6 +1,6 @@
 .page-title {
     // font-family: "Trattatello";
-    font-family: MyWebFont, sans-serif;
+    font-family: 'Dancing Script', cursive, sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-top: 120px;
@@ -9,10 +9,19 @@
 .main-contents {
     & .menu-inner-wrapper {
         & .slider-wrapper {
+            display: flex;
             width: 100%;
-            height: 305px;
-            background-color: orange;
-            margin-top: 100px;
+            // height: 305px;
+            // margin-top: 100px;
+            & .slider-item {
+                width: 200px;
+                height: 305px;
+                margin: 0 5px;
+                background-image: url("../images/new_menu_cake.jpg");
+                background-size: cover;
+                background-position: center;
+                object-fit: cover;
+            }
         }
         & .menu-list {
             display: grid;
@@ -22,10 +31,11 @@
             // width: 84%;
             margin: auto;
             & .menu-item {
-                width: 280px;
+                width: 330px;
                 & .menu-img {
                     width: 100%;
                     height: 280px;
+                    object-fit: cover; 
                     background-color: pink;
                     &.new-icon {
                         position: relative;

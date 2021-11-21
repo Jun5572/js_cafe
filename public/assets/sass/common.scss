@@ -1,6 +1,26 @@
 $bgColorFooter: #5F4E46;
 
-@import url(//db.onlinewebfonts.com/c/05289e866fe7e1e99d27a7a31f8d3b66?family=Trattatello);
+// keyframes
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+// @import url(//db.onlinewebfonts.com/c/05289e866fe7e1e99d27a7a31f8d3b66?family=Trattatello);
 @font-face {
     font-family: MyWebFont;
     src: url("../fonts/Chalkduster.woff") format("woff");
@@ -31,7 +51,6 @@ footer {
             display: inline-block;
             padding: 0 5em;
             color: #ffffff;
-
             &::before {
                 // display: inline-block;
                 content: "\f35d";
@@ -46,6 +65,7 @@ footer {
         color: #ffffff;
         text-align: center;
         & i {
+
             margin-right: 0.2em;
         }
     }
@@ -262,13 +282,16 @@ table {
     pointer-events: none;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 100;
     opacity: 0;
     &.show {
-        opacity: 1;
+        animation-name: fadeIn;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        // opacity: 1;
         pointer-events: all;
     }
-
+    
     & .modal-image {
         position: absolute;
         max-width: 80%;
@@ -278,8 +301,10 @@ table {
         transform: translate(-50%, -50%);
         object-fit: cover;
         opacity: 0;
-        transition: 500ms ease-out;
         &.show {
+            animation-name: fadeIn;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
             opacity: 1;
         }
     }
