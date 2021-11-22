@@ -46,6 +46,11 @@ h2 {
   margin-bottom: 50px;
 }
 
+p {
+  margin: 0.5rem 0;
+  letter-spacing: 0.8px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +153,11 @@ table tr th {
 
 .w-container {
   width: 90%;
+  margin: auto;
+}
+
+.w-container.narrow {
+  width: 60%;
   margin: auto;
 }
 
@@ -285,6 +295,22 @@ table tr th {
   font-size: 1.5rem;
 }
 
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-wrapper a {
+  text-decoration: underline;
+}
+
 button {
   display: inline-block;
   outline: none;
@@ -305,9 +331,14 @@ button:hover {
   padding: 1em 8em;
 }
 
-.submit {
+.confirm {
   background-color: #eccc9a;
   font-size: 1.0rem;
+}
+
+.submit {
+  background-color: #000;
+  color: #fff;
 }
 
 .back-icon::before {

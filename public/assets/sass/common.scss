@@ -34,6 +34,10 @@ h2 {
     margin-bottom: 50px;
 }
 
+p {
+    margin: 0.5rem 0;
+    letter-spacing: 0.8px;
+}
 
 footer {
     display: flex;
@@ -122,6 +126,11 @@ table tr th {
 .w-container {
     width: 90%;
     margin: auto;
+
+    &.narrow {
+        width: 60%;
+        margin: auto;
+    }
 }
 
 .hero {
@@ -227,6 +236,15 @@ table tr th {
     font-size: 1.5rem;
 }
 
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a {
+        text-decoration: underline;
+    }
+}
+
 button {
     display: inline-block;
     outline: none;
@@ -247,9 +265,14 @@ button {
     padding: 1em 8em;
 }
 
-.submit {
+.confirm {
     background-color: rgb(236, 204, 154);
     font-size: 1.0rem;
+}
+
+.submit {
+    background-color: #000;
+    color: #fff;
 }
 
 .back-icon {

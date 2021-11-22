@@ -27,16 +27,7 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <div class="hero-img"></div>
-        <div class="hero-container w-container">
-            <div class="hero-title">
-                <h1>Contact</h1>
-            </div>
-        </div>
-    </section>
-
-    <h2>Contact Form</h2>
+    <h2>Contact Confirmation</h2>
     <section class="contact-form-wrapper w-container">
         <form method="post" action="thanks.html">
             <table class="contact-form-table">
@@ -44,28 +35,31 @@
                     <tr>
                         <th>
                             お名前
-                            <span class="required-icon">必須</span>
+                            <!-- <span class="required-icon">必須</span> -->
                         </th>
                         <td>
-                            <input type="text" name="your-name" id="" placeholder="珈琲太郎" required>
+                            <!-- <input type="text" name="your-name" id="" placeholder="珈琲太郎" required> -->
+                            <p>珈琲太郎</p>
                         </td>
                     </tr>
                     <tr>
                         <th>
                             メールアドレス
-                            <span class="required-icon">必須</span>
+                            <!-- <span class="required-icon">必須</span> -->
                         </th>
                         <td>
-                            <input type="email" name="your-email" id="" placeholder="xxxxxx@xxx" required>
+                            <!-- <input type="email" name="your-email" id="" placeholder="xxxxxx@xxx" required> -->
+                            <p>xxxxxx@xxx</p>
                         </td>
                     </tr>
                     <tr>
                         <th>
                             電話番号
-                            <span class="required-icon">必須</span>
+                            <!-- <span class="required-icon">必須</span> -->
                         </th>
                         <td>
-                            <input type="tel" name="your-phone-number" id="" placeholder="090-0000-0000" required>
+                            <!-- <input type="tel" name="your-phone-number" id="" placeholder="090-0000-0000" required> -->
+                            <p>090-0000-0000</p>
                         </td>
                     </tr>
                     <!-- <tr>
@@ -84,31 +78,35 @@
                     <tr>
                         <th>
                             カテゴリ
-                            <span class="required-icon">必須</span>
+                            <!-- <span class="required-icon">必須</span> -->
                         </th>
                         <td>
-                            <select name="contact-cate" id="contact-cate" required>
+                            <!-- <select name="contact-cate" id="contact-cate" required>
                                 <option value="0" selected>選択してください</option>
                                 <option value="1" >プルダウン１</option>
                                 <option value="2" >プルダウン２</option>
                                 <option value="2" >とりあえずプルダウン３</option>
-                            </select>
+                            </select> -->
+                            <p>プルダウン１
+                            </p>
                         </td>
                     </tr>
                     <tr>
                         <th class="contact-head">
                             内容
-                            <span class="optional-icon">任意</span>
+                            <!-- <span class="optional-icon">任意</span> -->
                         </th>
                         <td>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                            <p>内容が入ります内容が入ります</p>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <button class="btn-lg confirm" type="submit" value="confirm" >内容を確認</button>
-            <a href="./thanks.html">Thanks</a>
-            <a href="./confirm.html">confirm</a>
+            <div class="btn-wrapper">
+                <a href="./contact.html">修正する</a>
+                <button class="btn-lg submit" type="submit" value="submit" >送信する</button>
+            </div>
         </form>
     </section>
 
