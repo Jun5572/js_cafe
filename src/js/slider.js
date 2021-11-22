@@ -1,9 +1,9 @@
 // slickのスライダー記述
 $(".slider-wrapper").slick({
     centerMode: true,
-    centerPadding: '100px',
+    centerPadding: '60px',
     autoplay: true,
     dots: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    // slidesToScroll: 1,
 });

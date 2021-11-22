@@ -80,13 +80,6 @@ footer .footer-menu li {
   color: #ffffff;
 }
 
-footer .footer-menu li::before {
-  content: "\f35d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 0.3em;
-}
-
 footer p {
   color: #ffffff;
   text-align: center;
@@ -98,7 +91,6 @@ footer p i {
 
 body {
   font-size: 15px;
-  font-family: sans-serif;
   letter-spacing: 0.1px;
 }
 
@@ -261,12 +253,11 @@ table tr th {
 
 .main-contents .head-text-container {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 80px;
 }
 
 .main-contents .head-text-container p {
   text-align: center;
-  line-height: 3em;
 }
 
 .news-head {
@@ -325,6 +316,10 @@ button:hover {
 
 .btn-sm {
   padding: 0.25em 1.5em;
+}
+
+.btn-md {
+  padding: 1em 5em;
 }
 
 .btn-lg {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .head-text-container h2 {
   position: relative;
 }
@@ -7,21 +8,68 @@
   top: -0.6em;
   left: 50%;
   content: 'People';
-  font-size: 3em;
+  font-size: 2em;
   color: #efefef;
   z-index: -10;
 }
 
-.description-container {
-  width: 80%;
-  margin: auto;
+.description-container h2 {
+  position: relative;
+}
+
+.description-container h2::after {
+  position: absolute;
+  top: -0.6em;
+  left: 50%;
+  content: 'Job';
+  font-size: 2em;
+  color: #efefef;
+  z-index: -10;
 }
 
 .description-container .desc-table {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto 50px;
 }
 
-.description-container .desc-table th {
-  width: 30%;
+.description-container .desc-table th,
+.description-container .desc-table td {
+  text-align: left;
+  padding: 1em;
+}
+
+.description-container .desc-table.proper {
+  position: relative;
+}
+
+.description-container .desc-table.proper::before {
+  position: absolute;
+  top: 0;
+  left: -2em;
+  content: '正社員';
+  font-size: 1.5em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.description-container .desc-table.parttime {
+  position: relative;
+}
+
+.description-container .desc-table.parttime::before {
+  position: absolute;
+  top: 0;
+  left: -2em;
+  content: 'アルバイト';
+  font-size: 1.5em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.entry-info {
+  text-align: center;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=recruit.css.map */

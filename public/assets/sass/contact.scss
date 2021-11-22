@@ -7,10 +7,11 @@
         text-align: center;
     }
     
-    table {
+    .contact-form-table {
         table-layout: fixed;
         border-collapse: collapse;
         color: #848484;
+        margin-bottom: 60px;
 
         & tr {
             border-bottom: 1px solid #efefef;
@@ -108,8 +109,12 @@
         }
     }
 
-    & button {
-        display: block;
-        margin: 40px auto;
+    & .btn-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto 100px;
+        & button {
+            display: block;
+        }
     }
 }

@@ -6,7 +6,7 @@
             top: -0.6em;
             left: 50%;
             content: 'People';
-            font-size: 3em;
+            font-size: 2em;
             color: #efefef;
             z-index: -10;
         }
@@ -14,14 +14,57 @@
 }
 
 .description-container {
-    width: 80%;
-    margin: auto;
-
-    & .desc-table {
-        width: 100%;
-        & th {
-            width: 30%;
+    & h2 {
+        position: relative;
+        &::after {
+            position: absolute;
+            top: -0.6em;
+            left: 50%;
+            content: 'Job';
+            font-size: 2em;
+            color: #efefef;
+            z-index: -10;
         }
     }
+    & .desc-table {
+        width: 60%;
+        margin: 0 auto 50px;
+        & th,
+        & td {
+            text-align: left;
+            padding: 1em;
+        }
+
+        // 正社員、アルバイトの表示
+        &.proper {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -2em;
+                content: '正社員';
+                font-size: 1.5em;
+                writing-mode: vertical-rl;
+            }
+        }
+
+        &.parttime {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -2em;
+                content: 'アルバイト';
+                font-size: 1.5em;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+
+}
+
+.entry-info {
+    text-align: center;
+    margin-bottom: 100px;
 }
 
